@@ -1,0 +1,94 @@
+
+body {
+	background-color: #fcfbf5;
+	color: ￼#3c2c18;
+	font-family: "Alegreya Sans", sans-serif;
+}
+
+
+/* Carousel
+======================================= */
+
+.carousel-caption > h1 {
+	color: #fcfbf5;
+}
+
+.carousel-indicators > li {
+	background-color: #fcfbf5;
+}
+
+.carousel-indicators .active {
+	background-color: #eae4d5;
+	border: #eae4d5;
+}
+
+/* Section 
+======================================= */
+
+.section-colored {
+	background-color: #fcfbf5;
+	
+}
+
+h2 {
+	
+	font-style: bold;
+}
+
+.philosophy {
+	font-size: 25px;
+}
+
+.bulletPoints {
+	font-size: 16px;
+}
+
+.featured {
+	font-size: 25px;
+}
+
+#map-canvas {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vegPics {
+	position: relative;
+}
+
+.vegPic {
+	position: relative;
+	z-index: 2;
+	opacity: 1;
+	border-radius: 20px 0px 20px 0px;
+}
+
+.vegPic-alt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border-radius: 20px 0px 20px 0px;
+}
+
+
+/* Media Queries ==================================== */ 
+
+
+
+@media(max-width: 769px) {
+	#myCarousel {
+		max-height: 500px;
+	}
+}
+
+@media (max-width: 321px) {
+	#myCarousel {
+		max-height: 350px;
+	}
+}
+
+
+
+
