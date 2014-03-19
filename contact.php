@@ -63,8 +63,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     <span class="icon-bar"></span>
                 </button>
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-                <a class="navbar-brand" href="index.html">
-                  <img src="img/nfLogo.png" alt="Nature's Finest logo"></a>
+                <a class="navbar-brand navbar-left hidden-xs" id ="logo" href="index.html">
+                  <img src="img/nfLogo.png" alt="Nature's Finest logo"</a></a>
+                <a class="navbar-brand navbar-left hidden-xl hidden-lg hidden-md hidden-sm" id="tinylogo" href="index.html">
+                  <img src="img/nfLogoTiny.png" alt="Nature's Finest logo"</a></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -72,35 +74,27 @@ google.maps.event.addDomListener(window, 'load', initialize);
                
                     <ul class="nav navbar-right navbar-nav">
                         
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="aboutPhilosophy.html">Our Philosophy</a>
-                                </li>
-                                <li><a href="aboutStory.html">Our Story</a>
-                                </li>
-                            </ul>
+                        <li><a href="inSeason1.html">In Season</a>
                         </li>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="featuredProducts.html">Featured Products</a>
-                                </li>
-                                <li><a href="inSeason.html">In Season</a>
-                                </li>
-                                <li><a href="inSeason2.html">In Season Option 2</a>
-                                </li>
-                                <li><a href="fullProductLine.html">Full Product Line</a>
-                                </li>
-                                
+                                <li><a href="inSeason1.html">In Season </a></li>
+                                <li><a href="fullProductLine.html">Full Product Line</a></li>  
                             </ul>
                         </li>
 
-                        <li><a href="inSeason.html">In Season</a>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="aboutPhilosophy.html">Farming Practices</a>
+                                </li>
+                                <li><a href="aboutStory.html">About Us</a>
+                                </li>
+                            </ul>
                         </li>
-
+                
                         <li><a href="contact.php">Contact</a>
                         </li>
 
@@ -112,7 +106,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
      
         <!-- /.container -->
     </nav>
-
 <body>
 
     <!-- Page Content -->
@@ -142,11 +135,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
       </div><!-- /.row -->
       
-      <div class="row">
+      <div class="row contactForm">
 
         <div class="col-sm-8">
-          <h3>Lets Get In Touch!</h3>
-          <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <h3>Questions or Comments?</h3>
+          <div class="contact">
+            <p>Please use this form or the contact information to the right to inquire about how to become a customer or to provide suggestions or comments about our crops.  </p>
+        </div>
 			<?php  
 
                 // check for a successful form post  
@@ -185,12 +180,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
         <div class="col-sm-4">
           <h3>Nature's Finest</h3>
-          <h4>We grow exceptional produce.</h4>
-          <p>
-            Parkdale, Oregon<br>
-          </p>
-          <p><i class="fa fa-phone"></i> <abbr title="Phone">P</abbr>: (541) 214-4779</p>
-          <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto: adeats@gmail.com.">manager@naturesfinest.com</a></p>
+          <h4>Parkdale, Oregon<br></h4>
+          <p><i class="fa fa-phone"></i> <abbr title="Phone">P</abbr>:  (541) 214-4779</p>
+          <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto: adeats@gmail.com."> manager@naturesfinestfarm.com</a></p>
         </div>
 
       </div><!-- /.row -->
