@@ -1,13 +1,25 @@
+html {
+	font: #775730;
+}
 
 body {
 	background-color: #fcfbf5;
-	color: ￼#3c2c18;
-	font-family: "Alegreya Sans", sans-serif;
+	color: ￼red;
+	font-family: "Open Sans", sans-serif;
 }
 
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 16px;
+}
 
 /* Carousel
 ======================================= */
+.item, .active, .carousel-inner {
+height: 400px;
+}
 
 .carousel-caption > h1 {
 	color: #fcfbf5;
@@ -22,17 +34,62 @@ body {
 	border: #eae4d5;
 }
 
+#home {
+	margin-top: 40px;
+}
+
 /* Section 
 ======================================= */
-
+#product  {
+	margin-top: 60px;
+}
 .section-colored {
 	background-color: #fcfbf5;
+	margin-top: 50px;
 	
 }
 
 h2 {
-	
+	margin-top: 0px;
 	font-style: bold;
+}
+
+.productHeader {
+	position: fixed;
+	z-index: 1;
+	height: 150px;
+	text-align: center;
+	background-color: purple;
+	margin-top: 30px;
+}
+
+#vegHead {
+	position: fixed;
+	font-style: bold;
+	color: red;
+	z-index: 1;
+	background-color: #FCFBF5;
+	margin-top: 100px;
+}
+
+.green {
+	background-color: #87AE61;
+}
+
+.orange {
+	background-color: #EB976B;
+}
+
+.blue {
+	background-color: #0085AC;
+}
+
+.yellow {
+	background-color: #E3D07D;
+}
+
+#about {
+	margin-top: 50px;
 }
 
 .about p {
@@ -47,18 +104,36 @@ h2 {
 
 }
 
+.panel-default .panel-heading {
+	color: #775730;
+}
+
+#contactPage {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#map-canvas {
+	width: 1000px;
+	height: 300px;
+	margin-top: 100px;
+}
+
 .contactForm {
 	display: block;
 	margin-left: 100px;
 }
 
-.contact p {
-	font-size: 18px;
+#contactInfo {
+	text-align: center;
+}
 
+#aboutHeader {
+	text-align: center;
 }
 
 .philosophy {
-	font-size: 25px;
+	font-size: 14px;
 }
 
 .bulletPoints {
@@ -70,11 +145,6 @@ h2 {
 	font-size: 25px;
 }
 
-#map-canvas {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .vegPics {
 	position: relative;
@@ -104,16 +174,87 @@ h2 {
 	}
 }
 
+@media(max-width: 1199px) {
+	#fieldPic {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-@media(max-width: 769px) {
-	#myCarousel {
-		max-height: 500px;
+	#map-canvas {
+		width: 850px;
 	}
 }
 
+@media (max-width: 991px) {
+	#map-canvas {
+		width: 620px;
+	}
+}
+
+@media (max-width: 864px) {
+	img {
+		
+		z-index: -100;
+	}
+
+	.navbar-nav .navbar-right {
+		margin-top: -15px;
+		font-size: 20px;
+	}
+
+	.navbar .navbar-collapse,
+	.navbar .navbar-form {
+		
+		z-index: 100;
+	}
+}
+
+@media(max-width: 767px) {
+	.carousel-inner {
+		height: 100%;
+	}
+
+	.section-colored {
+		margin-top: 0px;
+		padding-top: 10px;
+	}
+	
+	#aboutHeader {
+		text-align: left;
+	}
+	#map-canvas {
+		width: 575px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;	
+	}
+
+	#contactPage {
+		padding-left: 0px;
+		padding-right: 0px;
+
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+	#contactInfo {
+		margin-top: 80px;
+	}
+}
+
+@media (max-width: 665px) {
+	#map-canvas {
+		max-width: 100%;
+	}
+}
 @media (max-width: 321px) {
 	#myCarousel {
 		max-height: 350px;
+	}
+	#contactPage {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-left: -40px;
+		margin-right: -40px;
 	}
 }
 

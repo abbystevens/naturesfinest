@@ -4,14 +4,14 @@
 	border-color: #eae4d5;
 	height: 130px;
 	margin-bottom: 10px;
-	font-size: 24px;
-	font-family: "Alegreya Sans", sans-serif;
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
 }
 
 .navbar .navbar-brand {
 	padding-left: 20px;
 	position: relative;
-	z-index: -1;
+	z-index: 100px;
 }
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
 	color: #3c2c18;
@@ -28,6 +28,11 @@
 	color: #3c2c18;
 	background-color: #87ae61;
 }
+
+.navbar-nav.navbar-right:last-child {
+	  margin-top: -17px;
+	  
+  }
 
 .navbar .navbar-nav > .open > a, .navbar .navbar-nav > .open > a:hover, .navbar .navbar-nav > .open > a:focus {
 	color: #3c2c18;
@@ -54,20 +59,32 @@
 	color: #3c2c18;
 }
 
-@media (max-width: 864px) {
+/* MEDIA QUERIES ================================================ */
+@media (max-width: 991px) {
 	img {
-		
 		z-index: -100;
 	}
 
+  .navbar-nav.navbar-right:last-child {
+	  margin-right: -50px;
+	  margin-top: -15px;
+	  font-size: 14px;
+  }
+
 	.navbar .navbar-collapse,
-	.navbar .navbar-form {
-		
+	.navbar .navbar-form {	
 		z-index: 100;
 	}
 }
-@media (max-width: 767px) {
 
+@media (max-width: 830px) {
+  .navbar-nav.navbar-right:last-child {
+	  margin-right: -30px;
+	  
+  }
+}
+
+@media (max-width: 767px) {
 
 	.navbar .navbar-nav > li > a {
 		margin: 0px;
@@ -85,21 +102,25 @@
 	.navbar .navbar-form {
 		border-color: #775730;
 		background-color: #775730;
-		
+		margin-top: 20px;
+	}
+
+	.navbar-toggle {
+		margin-top: 55px;
+		margin-right: 20px;
+	}
+
+	.nav > li {
+		margin-top: 25px;
 	}
 }
+
 @media (max-width: 321px) {
 
 	.navbar-toggle {
 		margin-bottom: 0px;
-
-
 	}
-	 #tinylogo {
-	 	margin-top: -20px;
-		padding: 0px 50px 100px 50px ;
 
-	}
 
 .navbar .navbar-collapse,
 .navbar .navbar-form {
@@ -107,10 +128,6 @@
 	background-color: #775730;
 }
 
-
-	.content {
-		margin-top: 20px;
-	}
 }
 
 
