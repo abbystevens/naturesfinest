@@ -20,49 +20,18 @@ h3 {
 	font-size: 16px;
 }
 
-/* Carousel
-======================================= 
-.carousel {
-	height: 50%;
-}
-
-.carousel img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-	height: 750px;
-}
-
-.item .active .carousel-inner {
-	height: 124%;
-}
-
-.carousel-caption > h1 {
-	color: #fcfbf5;
-}
-
-.carousel-indicators > li {
-	background-color: #fcfbf5;
-}
-
-.carousel-indicators .active {
-	background-color: #eae4d5;
-	border: #eae4d5;
-}
-
-*/
 
 #home {
 	margin-top: 245px;
-	background-color: #9E7B60;
-	opacity: 0.75;
+	background: rgba(158, 123, 96, .75);
 }
 
 #home h3 {
 	color:  #fcfbf5;
 	font-size: 32px;
 	margin: 5px;
+	line-height: 1.4;
+	
 }
 
 #home h4 {
@@ -89,6 +58,18 @@ h3 {
 	margin-top: 50px;
 	
 }
+
+#about {
+	padding: 50px;
+	margin-top: 220px;
+	background: rgba(158, 123, 96, .75);
+	color: #fcfbf5;
+}
+
+.panel-body {
+	color: #775730;
+}
+
 
 h2 {
 	margin-top: 0px;
@@ -129,9 +110,6 @@ h2 {
 	background-color: #E3D07D;
 }
 
-#about {
-	margin-top: 50px;
-}
 
 .about p {
 	font-size: 16px;
@@ -169,12 +147,14 @@ h2 {
 	text-align: center;
 }
 
-#aboutHeader {
+#aboutHeader h2 {
 	text-align: center;
+	font-size: 24px;
 }
 
-.philosophy {
-	font-size: 14px;
+.philosophy h3 {
+	font-size: 20px;
+	line-height: 1.5;
 }
 
 .bulletPoints {
@@ -246,7 +226,7 @@ footer {
 
 @media (max-width: 991px) {
  #home {
-		margin-top: 275px;
+		margin-top: 250px;
 	}
 	#map-canvas {
 		width: 620px;
@@ -272,11 +252,12 @@ footer {
 }
 
 @media(max-width: 767px) {
-	
 
+	.navbar img {
 
+	}
 	#home {
-		margin-top: 230px;
+		margin-top: 240px;
 	}
 
 	.section-colored {
@@ -284,6 +265,11 @@ footer {
 		padding-top: 10px;
 	}
 	
+	#about {
+		margin-top: 140px;
+		padding: 20px;
+	}
+
 	#aboutHeader {
 		text-align: left;
 	}
@@ -308,7 +294,7 @@ footer {
 
 @media (max-width: 665px) {
 	#home {
-		margin-top: 250px;
+		margin-top: 175px;
 	}
 
 	#map-canvas {
@@ -317,29 +303,44 @@ footer {
 }
 
 @media (max-width: 575px) {
+	#home {
+		margin-top: 150px;
+	}
 
+	#home h3 {
+		font-size: 24px;
+	}
+}
+@media (max-width: 550px) {
 	#home h3 {
 		font-size: 24px;
 	}
 }
 
 @media (max-width: 500px) {
-	#home {
-		margin-top: 160px;
-	}
-	#home h3 {
-		font-size: 20px;
-	}
-}
-
-@media (max-width: 321px) {
 	html { 
-  background: url(../img/mtHood.jpg) no-repeat center center fixed; 
+  background: url(../img/nfBinHoodxs.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 	font: #775730;
+	}
+
+	#home {
+		margin-top: 190px;
+	}
+	#home h3 {
+		font-size: 20px;
+	}
+
+}
+
+@media (max-width: 321px) {
+
+	#about {
+		margin-top: 200px;
+		padding: 20px;
 	}
 	#contactPage {
 		padding-left: 0px;
